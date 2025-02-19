@@ -1311,7 +1311,7 @@ function initDropdowns() {
   dropdowns.forEach(dropdown => {
     const dropdownInput = dropdown.querySelector(".dropdown-input");
     const dropdownButton = dropdown.querySelector(".dropdown-button");
-    const dropdownItems = dropdown.querySelectorAll(".dropdown__item");
+    const dropdownItems = dropdown.querySelectorAll(".dropdown-select__item");
     function toggleDropdown() {
       dropdown.classList.toggle("show");
     }
@@ -1330,40 +1330,6 @@ function initDropdowns() {
     document.addEventListener("click", closeDropdown);
   });
 }
-
-// function initButtonDropdowns() {
-//   const buttons = document.querySelectorAll(".dropdown-btn");
-
-//   buttons.forEach((button) => {
-//     const dropdown = button.querySelector(".dropdown-filter");
-//     if (!dropdown) return;
-
-//     button.addEventListener("click", function (event) {
-//       event.stopPropagation();
-//       const isOpen = dropdown.classList.contains("show");
-//       closeAllDropdowns();
-//       if (!isOpen) {
-//         dropdown.classList.add("show");
-//         button.classList.add("active");
-//       }
-//     });
-//   });
-
-//   document.addEventListener("click", function (event) {
-//     if (!event.target.closest(".dropdown-btn")) {
-//       closeAllDropdowns();
-//     }
-//   });
-
-//   function closeAllDropdowns() {
-//     buttons.forEach((btn) => {
-//       btn.classList.remove("active");
-//       const dropdown = btn.querySelector(".dropdown-filter");
-//       if (dropdown) dropdown.classList.remove("show");
-//     });
-//   }
-// }
-
 initDropdowns();
 // initButtonDropdowns();
 
