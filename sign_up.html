@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+
+    <div class="register">
+
+      <div class="register__body">
+        <a href="#" class="register__logo logo">dex<span>cel</span></a>
+        <h1 class="register__title">Create an Account</h1>
+
+
+        <form class="register__form form">
+          <div class="register__role">
+            <div class="register__role-title">Create a account to continue</div>
+            <div class="register__role-tabs options">
+              <div class="options__item">
+                <input id="trader" type="radio" name="role" class="options__input">
+                <label for="trader" class="options__label">I’m Trader</label>
+              </div>
+              <div class="options__item">
+                <input id="merchant" type="radio" name="role" class="options__input" checked>
+                <label for="merchant" class="options__label">I’m Merchant</label>
+              </div>
+            </div>
+          </div>
+          <div class="register__form-items">
+            <div class="register__form-item form__item ">
+              <label class="form__label">Email Address:</label>
+              <div class="form__input input">
+                <input type="email" name="" value="esteban_schiller@gmail.com" placeholder="" class="input__control">
+              </div>
+            </div>
+            <div class="register__form-item form__item ">
+              <label class="form__label">Password</label>
+              <div class="form__input input">
+                <input type="password" name="" value="esteban_schiller@gmail.com" placeholder="" class="input__control">
+              </div>
+            </div>
+            <div class="register__form-item form__item ">
+              <label class="form__label">Repeat password</label>
+              <div class="form__input input">
+                <input type="password" name="" value="esteban_schiller@gmail.com" placeholder="" class="input__control">
+              </div>
+            </div>
+          </div>
+          <div class="register__checkbox checkbox">
+            <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input ">
+            <label for="formAgreement" class="checkbox__label">
+              <p class="checkbox__label-text"> <span>I agree with the</span> <a href="#">terms & conditions</a></p>
+            </label>
+          </div>
+          <button type="button" class="register__form-button button">Sign Up</button>
+          <div class="register__form-login"><span class="register__form-login-text">Already have an account? </span><a
+              href="#" class="register__form-login-link">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+</body>
+
+</html>

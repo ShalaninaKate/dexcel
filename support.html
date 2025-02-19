@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Support</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+  <div class="sidebar__header">
+    <a href="#" class="sidebar__logo logo">dex<span>cel</span></a>
+  </div>
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard"></use>
+          </svg>
+          <p class="nav__link-text">Dashboard</p>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon nav__link-icon--widget">
+            <use xlink:href="img/sprite.svg#widget"></use>
+          </svg>
+          <p class="nav__link-text">Widget</p>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#transactions"></use>
+          </svg>
+          <p class="nav__link-text">Transactions</p>
+        </a>
+      </li>
+
+    </ul>
+    <ul class="nav__list nav__list--settings">
+      <div class="nav__list-title">PAGES</div>
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#settings"></use>
+          </svg>
+          <p class="nav__link-text">Settings</p>
+        </a>
+      </li>
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link active">
+
+          <svg class="nav__link-icon nav__link-icon--support" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke" d="M11.3333 5.33301H14.6666C15.0346 5.33301 15.3333 5.03434 15.3333 4.66634V1.33301"
+              stroke="black" stroke-width="1.33333" stroke-miterlimit="10" />
+            <path class="stroke"
+              d="M11.3333 15.333H8C8 13.9997 10.6667 13.333 10.6667 11.9997C10.6667 11.2637 10.0693 10.6663 9.33333 10.6663C8.59733 10.6663 8 11.2637 8 11.9997"
+              stroke="black" stroke-width="1.33333" stroke-miterlimit="10" />
+            <path class="stroke" d="M15.3334 13.333H13.3334C12.9654 13.333 12.6667 13.0343 12.6667 12.6663V9.99967"
+              stroke="black" stroke-width="1.33333" stroke-miterlimit="10" />
+            <path class="stroke" d="M15.3333 10V16" stroke="black" stroke-width="1.33333" stroke-miterlimit="10" />
+            <path
+              d="M6 14.359C3.298 13.5077 1.33333 10.979 1.33333 7.99966C1.33333 4.32366 4.324 1.333 8 1.333C10.5173 1.333 12.7933 2.72633 13.94 4.96966L15.1273 4.36299C13.7513 1.67166 11.0207 -0.000337299 8 -0.000337299C3.58867 -0.000337299 0 3.58833 0 7.99966C0 11.719 2.55533 14.845 6 15.7363V14.359Z"
+              fill="black" />
+            <path class="stroke" d="M8.00008 4V8H4.66675" stroke="black" stroke-width="1.33333"
+              stroke-miterlimit="10" />
+          </svg>
+
+
+          <p class="nav__link-text">Support</p>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--logout">
+
+      <li class="nav__item ">
+        <a href="#" class="nav__link">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#logout"></use>
+          </svg>
+          <p class="nav__link-text">Logout</p>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+
+</aside>
+
+    <div class="page">
+            <header class="header">
+        <a href="#" class="header__logo logo">dex<span>cel</span></a>
+
+        <div class="header__actions">
+          <button type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+            <span class="notification__count">6</span>
+          </button>
+          <button type="button" class="header__lang lang">
+            <span class="lang__text">
+              EN
+            </span>
+            <span class="lang__circle">
+              <svg class="lang__icon">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </span>
+
+          </button>
+          <button type="button" class="header__profile profile">
+            <div class="profile__user">
+              <div class="profile__ava">
+                <img class="profile__img" src="./img/ava.jpg" alt="ava">
+              </div>
+            </div>
+            <div class="profile__info">
+              <div class="profile__name">Moni Roy</div>
+              <div class="profile__role">Merchant</div>
+            </div>
+            <span class="lang__circle">
+              <svg class="lang__icon">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </header>
+
+      <main class="main support">
+        <h1 class="support__title title">My tickets</h1>
+        <div class="support__tickets">
+          <div class="tickets table">
+            <div class="tickets__header table__header">
+              <button type="button" class="tickets__create button">Create Ticket</button>
+              <div class="tickets__filters filters">
+                <div class="filters__items">
+                  <div class="filters__item filters__item--padd">
+                    <img src="./img/svg/filter.svg" alt="filter-icon" class="filters__icon">
+                  </div>
+                  <div class="filters__item filters__item--padd"> <span class="filters__title">Filter By</span></div>
+                  <div class="filters__item dropdown-item">
+                    <button class="filters__btn dropdown-btn" type="button">
+                      <span class="filters__title">Date</span>
+                      <svg class="filters__arrow">
+                        <use xlink:href="img/sprite.svg#arrow-filters"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-filter dropdown">
+                      <div class="calendar">
+                        <div class="calendar__header">
+                          <span class="calendar__title">February 2025</span>
+                          <div class="calendar__nav">
+                            <button class="calendar__nav-btn calendar__nav-btn--back">
+                              <svg class="calendar__nav-arrow">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                              </svg>
+                            </button>
+                            <button class="calendar__nav-btn calendar__nav-btn--next">
+                              <svg class="calendar__nav-arrow">
+                                <use xlink:href="img/sprite.svg#arrow"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="calendar__table">
+                          <div class="calendar__items calendar__items--title">
+                            <span class="calendar__item">S</span>
+                            <span class="calendar__item">M</span>
+                            <span class="calendar__item">T</span>
+                            <span class="calendar__item">W</span>
+                            <span class="calendar__item">T</span>
+                            <span class="calendar__item">F</span>
+                            <span class="calendar__item">S</span>
+                          </div>
+                          <div class="calendar__body">
+                            <div class="calendar__items">
+                              <span class="calendar__item">27</span>
+                              <span class="calendar__item">28</span>
+                              <span class="calendar__item">29</span>
+                              <span class="calendar__item">30</span>
+                              <span class="calendar__item">1</span>
+                              <span class="calendar__item">2</span>
+                              <span class="calendar__item">3</span>
+                            </div>
+                            <div class="calendar__items">
+                              <span class="calendar__item">4</span>
+                              <span class="calendar__item">5</span>
+                              <span class="calendar__item">6</span>
+                              <span class="calendar__item">7</span>
+                              <span class="calendar__item">8</span>
+                              <span class="calendar__item">9</span>
+                              <span class="calendar__item">10</span>
+                            </div>
+                            <div class="calendar__items">
+                              <span class="calendar__item">11</span>
+                              <span class="calendar__item">12</span>
+                              <span class="calendar__item">13</span>
+                              <span class="calendar__item">14</span>
+                              <span class="calendar__item">15</span>
+                              <span class="calendar__item">16</span>
+                              <span class="calendar__item active">17</span>
+                            </div>
+                            <div class="calendar__items">
+                              <span class="calendar__item">18</span>
+                              <span class="calendar__item">19</span>
+                              <span class="calendar__item">20</span>
+                              <span class="calendar__item">21</span>
+                              <span class="calendar__item">22</span>
+                              <span class="calendar__item">23</span>
+                              <span class="calendar__item">24</span>
+                            </div>
+                            <div class="calendar__items">
+                              <span class="calendar__item">25</span>
+                              <span class="calendar__item">26</span>
+                              <span class="calendar__item">27</span>
+                              <span class="calendar__item">28</span>
+                              <span class="calendar__item">29</span>
+                              <span class="calendar__item">30</span>
+                              <span class="calendar__item">31</span>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="dropdown-filter__bottom">
+                        <p class="dropdown-filter__bottom-text">*You can choose multiple date</p>
+                        <button class="dropdown-filter__button button">Apply Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filters__item dropdown-item">
+                    <button class="filters__btn dropdown-btn" type="button">
+                      <span class="filters__title">Order Type</span>
+                      <svg class="filters__arrow">
+                        <use xlink:href="img/sprite.svg#arrow-filters"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-filter dropdown">
+                      <div class="dropdown-filter__title">Select Order Type</div>
+                      <div class="dropdown-filter__type type-order">
+                        <div class="type-order__item">
+                          <input id="send" type="checkbox" name="type-order" class="type-order__input " checked>
+                          <label for="send" class="type-order__label">
+                            Send
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="recieve" type="checkbox" name="type-order" class="type-order__input ">
+                          <label for="recieve" class="type-order__label">
+                            Recieve
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="swap" type="checkbox" name="type-order" class="type-order__input ">
+                          <label for="swap" class="type-order__label">
+                            Swap
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="return" type="checkbox" name="type-order" class="type-order__input ">
+                          <label for="return" class="type-order__label">
+                            Return
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="error" type="checkbox" name="type-order" class="type-order__input ">
+                          <label for="error" class="type-order__label">
+                            Error
+                          </label>
+                        </div>
+                      </div>
+                      <div class="dropdown-filter__bottom">
+                        <p class="dropdown-filter__bottom-text">*You can choose multiple Order type</p>
+                        <button class="dropdown-filter__button button">Apply Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filters__item dropdown-item">
+                    <button class="filters__btn dropdown-btn" type="button">
+                      <span class="filters__title">Order Status</span>
+                      <svg class="filters__arrow">
+                        <use xlink:href="img/sprite.svg#arrow-filters"></use>
+                      </svg>
+                    </button>
+                    <div class="dropdown-filter dropdown">
+                      <div class="dropdown-filter__title">Select Order Status</div>
+                      <div class="dropdown-filter__type type-order">
+                        <div class="type-order__item">
+                          <input id="completed" type="checkbox" name="type-status" class="type-order__input " checked>
+                          <label for="completed" class="type-order__label">
+                            Completed
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="processing" type="checkbox" name="type-status" class="type-order__input ">
+                          <label for="processing" class="type-order__label">
+                            Processing
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="rejected" type="checkbox" name="type-status" class="type-order__input ">
+                          <label for="rejected" class="type-order__label">
+                            Rejected
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="hold" type="checkbox" name="type-status" class="type-order__input ">
+                          <label for="hold" class="type-order__label">
+                            On Hold
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="transit" type="checkbox" name="type-status" class="type-order__input ">
+                          <label for="transit" class="type-order__label">
+                            In Transit
+                          </label>
+                        </div>
+                        <div class="type-order__item">
+                          <input id="waiting" type="checkbox" name="type-status" class="type-order__input ">
+                          <label for="waiting" class="type-order__label">
+                            Waiting USDT
+                          </label>
+                        </div>
+                      </div>
+                      <div class="dropdown-filter__bottom">
+                        <p class="dropdown-filter__bottom-text">*You can choose multiple Order type</p>
+                        <button class="dropdown-filter__button button">Apply Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  </button>
+                  <button type="button" class="filters__item filters__item--padd">
+                    <svg class="filters__reset-icon">
+                      <use xlink:href="img/sprite.svg#reset">
+                      </use>
+                    </svg>
+                    <span class="filters__title ">Reset Filter</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tickets__table table__body">
+              <div class="table__row">
+                <ul class="tickets__table-items table__items table__items--title">
+                  <li class="table__item">ID</li>
+                  <li class="table__item">Date - Time</li>
+                  <li class="table__item">Type</li>
+                  <li class="table__item">Merchant ID</li>
+                  <li class="table__item">Trader ID</li>
+                  <li class="table__item">Sender</li>
+                  <li class="table__item">Status</li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="tickets__table-items table__items ">
+                  <li class="table__item"><span>123</span></li>
+                  <li class="table__item">12.09.2019 - 12.53 PM</li>
+                  <li class="table__item">Support on request</li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span class="table__item-sender">I’m (Moni Roy)</span></li>
+                  <li class="table__item">
+                    <div class="table__item-status table__item-status--completed">Completed</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="tickets__table-items table__items ">
+                  <li class="table__item"><span>123</span></li>
+                  <li class="table__item">12.09.2019 - 12.53 PM</li>
+                  <li class="table__item">Support on request</li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span class="table__item-sender">I’m (Moni Roy)</span></li>
+                  <li class="table__item">
+                    <div class="table__item-status table__item-status--requiresaction">Requires action</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="tickets__table-items table__items ">
+                  <li class="table__item"><span>123</span></li>
+                  <li class="table__item">12.09.2019 - 12.53 PM</li>
+                  <li class="table__item">Support on request</li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span class="table__item-sender">I’m (Moni Roy)</span></li>
+                  <li class="table__item">
+                    <div class="table__item-status table__item-status--processing">Processing</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="tickets__table-items table__items ">
+                  <li class="table__item"><span>123</span></li>
+                  <li class="table__item">12.09.2019 - 12.53 PM</li>
+                  <li class="table__item">Support on request</li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span class="table__item-sender">I’m (Moni Roy)</span></li>
+                  <li class="table__item">
+                    <div class="table__item-status table__item-status--completed">Completed</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="tickets__table-items table__items ">
+                  <li class="table__item"><span>123</span></li>
+                  <li class="table__item">12.09.2019 - 12.53 PM</li>
+                  <li class="table__item">Support on request</li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span class="table__item-sender">I’m (Moni Roy)</span></li>
+                  <li class="table__item">
+                    <div class="table__item-status table__item-status--completed">Completed</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="tickets__table-items table__items ">
+                  <li class="table__item"><span>123</span></li>
+                  <li class="table__item">12.09.2019 - 12.53 PM</li>
+                  <li class="table__item">Support on request</li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span class="table__item-sender">I’m (Moni Roy)</span></li>
+                  <li class="table__item">
+                    <div class="table__item-status table__item-status--completed">Completed</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="table__row">
+                <ul class="tickets__table-items table__items ">
+                  <li class="table__item"><span>123</span></li>
+                  <li class="table__item">12.09.2019 - 12.53 PM</li>
+                  <li class="table__item">Support on request</li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span>123412</span></li>
+                  <li class="table__item"><span class="table__item-sender">I’m (Moni Roy)</span></li>
+                  <li class="table__item">
+                    <div class="table__item-status table__item-status--completed">Completed</div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </main>
+      <footer class="footer">
+  <ul class="footer__items">
+    <li class="footer__item">
+      <a href="#" class="footer__link">Terms of Use</a>
+    </li>
+    <li class="footer__item">
+      <a href="#" class="footer__link">Privacy Policy</a>
+    </li>
+  </ul>
+</footer>
+
+    </div>
+  </div>
+</body>
+
+</html>

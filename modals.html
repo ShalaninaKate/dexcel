@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Модальные окна</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+
+
+  <div class="container-modal">
+    <div class="buttons">
+      <button class="button" data-path="support_new_ticket" data-animation="fadeInUp">New ticket</button>
+      <button class="button" data-path="support_new_ticket2" data-animation="fadeInUp">New ticket 2</button>
+      <button class="button" data-path="support_new_ticket_answer"
+        data-animation="fadeInUp">New ticket answer</button>
+      <button class="button" data-path="support_new_ticket_answer2"
+        data-animation="fadeInUp">New ticket answer 2 </button>
+
+    </div>
+
+    <div class="modal">
+
+
+      <!-- Support new ticket -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="support_new_ticket">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="ticket">
+          <div class="ticket__header">
+            <h2 class="ticket__title"> New Ticket ID123412</h2>
+            <p class="ticket__subtitle">12.09.2019 - 12.53 PM</p>
+          </div>
+          <form action="#" class="ticket form">
+
+            <div class="ticket__items">
+
+              <div class="ticket__item form__item">
+                <label class="form__label">Ticket Type</label>
+                <div class="form__input input input-select">
+                  <input class="input__control input__control--select dropdown-input" type="text" name=""
+                    value="Support on request" readonly placeholder="">
+                  <button class="input__btn dropdown-button">
+                    <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-icon input__btn-icon--arrow">
+                  </button>
+                  <ul class="dropdown-select">
+                    <li class="dropdown-select__item">Support on request</li>
+                    <li class="dropdown-select__item">Registration request</li>
+                    <li class="dropdown-select__item">General Questions</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="register__form-item form__item ">
+                <label class="form__label">ID</label>
+                <div class="form__input input">
+                  <input type="text" name="" value="123123123" placeholder="" class="input__control">
+                </div>
+              </div>
+              <div class="register__form-item form__item ">
+                <label class="form__label">Your Message</label>
+                <div class="form__input input">
+                  <textarea class="input__control input__control--textarea" name="" id=""
+                    placeholder="Describe the problem"></textarea>
+
+                </div>
+              </div>
+            </div>
+            <button type="button" class="ticket__button button">Send</button>
+          </form>
+        </div>
+
+      </div>
+      <!-- Support new ticket 2 -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="support_new_ticket2">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="ticket">
+          <div class="ticket__header">
+            <h2 class="ticket__title"> New Ticket ID123412</h2>
+            <p class="ticket__subtitle">12.09.2019 - 12.53 PM</p>
+          </div>
+          <form action="#" class="ticket form">
+
+            <div class="ticket__items">
+
+              <div class="ticket__item form__item">
+                <label class="form__label">Ticket Type</label>
+                <div class="form__input input input-select">
+                  <input class="input__control input__control--select dropdown-input" type="text" name=""
+                    value="General questions" readonly placeholder="">
+                  <button class="input__btn dropdown-button">
+                    <img src="./img/svg/arrow-select.svg" alt="arrow" class="input__btn-icon input__btn-icon--arrow">
+                  </button>
+                  <ul class="dropdown-select dropdown">
+                    <li class="dropdown-select__item">Support on request</li>
+                    <li class="dropdown-select__item">Registration request</li>
+                    <li class="dropdown-select__item">General Questions</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="register__form-item form__item ">
+                <label class="form__label">Your Message</label>
+                <div class="form__input input">
+                  <textarea class="input__control input__control--textarea" name="" id=""
+                    placeholder="Describe the problem"></textarea>
+
+                </div>
+              </div>
+            </div>
+            <button type="button" class="ticket__button button">Send</button>
+          </form>
+        </div>
+
+      </div>
+      <!-- Support_new_ticket_answer-->
+      <div class="modal__container modal__container--chat" role="dialog" aria-modal="true"
+        data-target="support_new_ticket_answer">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="ticket">
+          <div class="ticket__top">
+            <div class="ticket__header">
+              <h2 class="ticket__title"> Ticket ID123412</h2>
+              <p class="ticket__subtitle ticket__subtitle--answer">12.09.2019 - 12.53 PM</p>
+            </div>
+            <button type="button" class="ticket__resolved">Resolved</button>
+          </div>
+          <div class="ticket__details">
+            <div class="ticket__details-items">
+              <div class="table__item"><span class="table__item-from">From <span>Merchant (I’m)</span></span></div>
+              <div class="table__item">
+                ID123412
+              </div>
+            </div>
+            <div class="ticket__details-items">
+              <div class="table__item">Ticket Type</div>
+              <div class="table__item">
+                General Questions
+              </div>
+            </div>
+            <div class="ticket__details-items">
+              <div class="table__item">Status</div>
+              <div class="table__item">
+                <div class="table__item-status table__item-status--processing">Processing</div>
+              </div>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat__body">
+              <div class="chat__messages">
+                <ul class="chat__message chat__message--user">
+                  <li class="chat__message-item">
+                    <div class="chat__message-content">
+                      <ul class="chat__message-block">
+                        <li class="chat__message-text">
+                          <p>
+                            Aenean at sapien dolor
+                          </p>
+                          <div class="chat__message-text-bottom">
+                            <div class="chat__message-time">6.34 pm</div>
+                            <button class="chat__message-text-dots">
+                              <svg class="chat__message-dots-icon">
+                                <use xlink:href="img/sprite.svg#more"></use>
+                              </svg>
+                            </button>
+                          </div>
+
+                        </li>
+                        <li class="chat__message-text">
+                          <p>
+                            Aenean at sapien dolor pellentesque viverra. Nibh ornare quis ut integer posuere. Id
+                            elementum
+                            sodales nunc nam turpis.
+                          </p>
+                          <div class="chat__message-text-bottom">
+                            <div class="chat__message-time">6.34 pm</div>
+                            <button class="chat__message-dots">
+                              <svg class="chat__message-dots-icon">
+                                <use xlink:href="img/sprite.svg#more"></use>
+                              </svg>
+                            </button>
+                          </div>
+
+                        </li>
+                      </ul>
+
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="chat__messages">
+                <ul class="chat__message chat__message--support">
+                  <li class="chat__message-item">
+                    <div class="chat__message-ava">
+                      <div class="profile__user">
+                        <div class="profile__ava ">
+                          <img class="profile__img" src="./img/ava2.jpg" alt="ava">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__message-content">
+                      <ul class="chat__message-block">
+                        <li class="chat__message-text">
+                          <p class="chat__message-text-title">Admin</p>
+                          <p>
+                            Amet commodo quis ut pellentesque
+                          </p>
+                          <div class="chat__message-text-bottom">
+                            <div class="chat__message-time">6.34 pm</div>
+                            <button class="chat__message-text-dots">
+                              <svg class="chat__message-dots-icon">
+                                <use xlink:href="img/sprite.svg#more"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form class="chat__input-container">
+              <textarea class="chat__input" placeholder="Write massage"></textarea>
+              <div class="chat__input-actions">
+                <button class="chat__input-btn">
+                  <input type="file" name="image" class="chat__input-file">
+                  <img class="chat__input-icon chat__input-icon--clip" src="./img/svg/clip.svg" alt="">
+                </button>
+                <button class="chat__input-btn ">
+                  <img class="chat__input-icon chat__input-icon--file" src="./img/svg/file.svg" alt="">
+                </button>
+                <button type="submit" class="chat__input-button button"><span class="button__text">Send</span><img
+                    src="./img/svg/send.svg" alt="send" class="button__icon"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Support_new_ticket_answer-->
+      <div class="modal__container modal__container--chat" role="dialog" aria-modal="true"
+        data-target="support_new_ticket_answer2">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="ticket">
+          <div class="ticket__top">
+            <div class="ticket__header">
+              <h2 class="ticket__title"> Ticket ID123412</h2>
+              <p class="ticket__subtitle ticket__subtitle--answer">12.09.2019 - 12.53 PM</p>
+            </div>
+            <button type="button" class="ticket__resolved">Resolved</button>
+          </div>
+          <div class="ticket__details">
+            <div class="ticket__details-items">
+              <div class="table__item"><span class="table__item-from">From <span>Trader (I’m)</span></span></div>
+              <div class="table__item">
+                ID123412
+              </div>
+            </div>
+            <div class="ticket__details-items">
+              <div class="table__item">Ticket Type</div>
+              <div class="table__item">
+                General Questions
+              </div>
+            </div>
+            <div class="ticket__details-items">
+              <div class="table__item">Status</div>
+              <div class="table__item">
+                <div class="table__item-status table__item-status--processing">Processing</div>
+              </div>
+            </div>
+            <div class="ticket__details-items">
+              <div class="table__item">Merchant</div>
+              <div class="table__item">
+                ID123412
+              </div>
+            </div>
+            <div class="ticket__details-items">
+              <div class="table__item">Trader</div>
+              <div class="table__item">
+                ID123412
+              </div>
+            </div>
+          </div>
+          <div class="chat">
+            <div class="chat__body">
+              <div class="chat__messages">
+                <ul class="chat__message chat__message--user">
+                  <li class="chat__message-item">
+                    <div class="chat__message-content">
+                      <ul class="chat__message-block">
+                        <li class="chat__message-text">
+                          <p>
+                            Aenean at sapien dolor pellentesque viverra. Nibh ornare quis ut integer posuere. Id
+                            elementum
+                            sodales nunc nam turpis.
+                          </p>
+                          <div class="chat__message-text-bottom">
+                            <div class="chat__message-time">6.34 pm</div>
+                            <button class="chat__message-dots">
+                              <svg class="chat__message-dots-icon">
+                                <use xlink:href="img/sprite.svg#more"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="chat__messages">
+                <ul class="chat__message chat__message--support">
+                  <li class="chat__message-item">
+                    <div class="chat__message-ava">
+                      <div class="profile__user">
+                        <div class="profile__ava ">
+                          <img class="profile__img" src="./img/ava2.jpg" alt="ava">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat__message-content">
+                      <ul class="chat__message-block">
+                        <li class="chat__message-text">
+                          <p class="chat__message-text-title">Admin</p>
+                          <p>
+                            Amet commodo quis ut pellentesque
+                          </p>
+                          <div class="chat__message-text-bottom">
+                            <div class="chat__message-time">6.34 pm</div>
+                            <button class="chat__message-text-dots">
+                              <svg class="chat__message-dots-icon">
+                                <use xlink:href="img/sprite.svg#more"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form class="chat__input-container">
+              <textarea class="chat__input" placeholder="Write massage"></textarea>
+              <div class="chat__input-actions">
+                <button class="chat__input-btn">
+                  <input type="file" name="image" class="chat__input-file">
+                  <img class="chat__input-icon chat__input-icon--clip" src="./img/svg/clip.svg" alt="">
+                </button>
+                <button class="chat__input-btn ">
+                  <img class="chat__input-icon chat__input-icon--file" src="./img/svg/file.svg" alt="">
+                </button>
+                <button type="submit" class="chat__input-button button"><span class="button__text">Send</span><img
+                    src="./img/svg/send.svg" alt="send" class="button__icon"></button>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+</body>
+<style>
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .button {
+      width: 200px;
+      height: 50px;
+    }
+  }
+
+  .container-modal {
+    padding: 50px;
+  }
+
+</style>
+
+</html>

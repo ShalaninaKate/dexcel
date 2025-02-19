@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Avalanche</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+  <div class="sidebar__header">
+    <a href="#" class="sidebar__logo logo">dex<span>cel</span></a>
+  </div>
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#dashboard"></use>
+          </svg>
+          <p class="nav__link-text">Dashboard</p>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon nav__link-icon--widget">
+            <use xlink:href="img/sprite.svg#widget"></use>
+          </svg>
+          <p class="nav__link-text">Widget</p>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#transactions"></use>
+          </svg>
+          <p class="nav__link-text">Transactions</p>
+        </a>
+      </li>
+
+    </ul>
+    <ul class="nav__list nav__list--settings">
+      <div class="nav__list-title">PAGES</div>
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#settings"></use>
+          </svg>
+          <p class="nav__link-text">Settings</p>
+        </a>
+      </li>
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link ">
+
+          <svg class="nav__link-icon nav__link-icon--support" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke" d="M11.3333 5.33301H14.6666C15.0346 5.33301 15.3333 5.03434 15.3333 4.66634V1.33301"
+              stroke="black" stroke-width="1.33333" stroke-miterlimit="10" />
+            <path class="stroke"
+              d="M11.3333 15.333H8C8 13.9997 10.6667 13.333 10.6667 11.9997C10.6667 11.2637 10.0693 10.6663 9.33333 10.6663C8.59733 10.6663 8 11.2637 8 11.9997"
+              stroke="black" stroke-width="1.33333" stroke-miterlimit="10" />
+            <path class="stroke" d="M15.3334 13.333H13.3334C12.9654 13.333 12.6667 13.0343 12.6667 12.6663V9.99967"
+              stroke="black" stroke-width="1.33333" stroke-miterlimit="10" />
+            <path class="stroke" d="M15.3333 10V16" stroke="black" stroke-width="1.33333" stroke-miterlimit="10" />
+            <path
+              d="M6 14.359C3.298 13.5077 1.33333 10.979 1.33333 7.99966C1.33333 4.32366 4.324 1.333 8 1.333C10.5173 1.333 12.7933 2.72633 13.94 4.96966L15.1273 4.36299C13.7513 1.67166 11.0207 -0.000337299 8 -0.000337299C3.58867 -0.000337299 0 3.58833 0 7.99966C0 11.719 2.55533 14.845 6 15.7363V14.359Z"
+              fill="black" />
+            <path class="stroke" d="M8.00008 4V8H4.66675" stroke="black" stroke-width="1.33333"
+              stroke-miterlimit="10" />
+          </svg>
+
+
+          <p class="nav__link-text">Support</p>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--logout">
+
+      <li class="nav__item ">
+        <a href="#" class="nav__link">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#logout"></use>
+          </svg>
+          <p class="nav__link-text">Logout</p>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+
+</aside>
+
+    <div class="page js-main">
+      <header class="header">
+        <a href="#" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__text-block">
+          <h1 class="header__title">Avalanche Club</h1>
+          <p class="header__text">Sapien elit malesuada nibh enim amet nisi. Diam sagittis nec odio mauris nisl rhoncus
+            dis. Habitasse duis venenatis nisl viverra eu. Et id nunc mattis quam sapien egestas arcu. Tellus sed at
+            eget cursus.</p>
+        </div>
+
+        <div class="header__actions">
+          <button  type="button" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+          </button>
+          <button type="button" class="header__currency-selector currency-selector">
+            <span class="currency-selector__text">
+              BRT
+            </span>
+            <svg class="currency-selector__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <button type="button" class="header__profile profile">
+            <div class="profile__user">
+              <div class="profile__ava">
+                <img class="profile__img" src="./img/person.png" alt="ava">
+              </div>
+            </div>
+            <div class="profile__info">
+              <div class="profile__name">John Carter</div>
+              <div class="profile__settings">Account settings</div>
+            </div>
+            <svg class="profile__icon">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main class="main avalanche">
+        <div class="avalanche__code code">
+          <div class="code__qr">
+            <img src="./img/qr-code.svg" alt="">
+          </div>
+          <div class="code__body">
+            <h2 class="code__title">Code for your referrals</h2>
+            <div class="code__address">
+              <span class="code__address-text">a5d7fga56v6ad4fg2sadf4gadfg</span>
+              <button type="button" class="code__address-copy">
+                <svg class="code__address-copy-icon">
+                  <use xlink:href="img/sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </div>
+            <button type="button" class="code__btn button button--blue">Generate</button>
+          </div>
+        </div>
+        <ul class="avalanche__tariff tariff">
+          <li class="tariff__card tariff__card--stairs-1">
+            <div class="tariff__body">
+              <div class="tariff__header">
+                <h2 class="tariff__title">Golden Stairs I</h2>
+              </div>
+              <ul class="tariff__descr-items">
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
+                  <div class="tariff__descr-text">
+                    <p>Parturient dui iaculis sed proin nunc faucibus amet. Nisl vitae in dui eget pretium ut etiam.
+                      Faucibus semper diam quis volutpat est augue. Faucibus suspendisse ultrices egestas lacus sodales
+                      lobortis quam.</p>
+                    <p>Tellus sagittis mollis libero felis suspendisse risus. Malesuada leo est suspendisse ultricies
+                      in quam lacus. Elit sit massa elementum hendrerit feugiat sit etiam vel turpis. Nulla et est
+                      suspendisse maecenas faucibus luctus vel.</p>
+                  </div>
+                </li>
+
+              </ul>
+              <button type="button" class="tariff__button button">5 BRT</button>
+            </div>
+          </li>
+          <li class="tariff__card tariff__card--stairs-2">
+            <div class="tariff__body">
+              <div class="tariff__header">
+                <h2 class="tariff__title">Golden Stairs II</h2>
+              </div>
+              <ul class="tariff__descr-items">
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
+                  <div class="tariff__descr-text">
+                    <p>Parturient dui iaculis sed proin nunc faucibus amet. Nisl vitae in dui eget pretium ut etiam.
+                      Faucibus semper diam quis volutpat est augue. Faucibus suspendisse ultrices egestas lacus sodales
+                      lobortis quam.</p>
+                    <p>Tellus sagittis mollis libero felis suspendisse risus. Malesuada leo est suspendisse ultricies
+                      in quam lacus. Elit sit massa elementum hendrerit feugiat sit etiam vel turpis. Nulla et est
+                      suspendisse maecenas faucibus luctus vel.</p>
+                  </div>
+                </li>
+
+              </ul>
+              <button type="button" class="tariff__button button">5 BRT</button>
+            </div>
+          </li>
+          <li class="tariff__card tariff__card--stairs-3">
+            <div class="tariff__body">
+              <div class="tariff__header">
+                <h2 class="tariff__title">Golden Stairs III</h2>
+              </div>
+              <ul class="tariff__descr-items">
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
+                  <div class="tariff__descr-text">
+                    <p>Parturient dui iaculis sed proin nunc faucibus amet. Nisl vitae in dui eget pretium ut
+                      etiam.
+                      Faucibus semper diam quis volutpat est augue. Faucibus suspendisse ultrices egestas
+                      lacus sodales
+                      lobortis quam.</p>
+                    <p>Tellus sagittis mollis libero felis suspendisse risus. Malesuada leo est suspendisse
+                      ultricies
+                      in quam lacus. Elit sit massa elementum hendrerit feugiat sit etiam vel turpis. Nulla et
+                      est
+                      suspendisse maecenas faucibus luctus vel.</p>
+                  </div>
+                </li>
+
+              </ul>
+              <button type="button" class="tariff__button button">500 BRT</button>
+            </div>
+          </li>
+          <li class="tariff__card tariff__card--stairs-4">
+            <div class="tariff__body">
+              <div class="tariff__header">
+                <h2 class="tariff__title">Golden Stairs IV</h2>
+              </div>
+              <ul class="tariff__descr-items">
+                <li class="tariff__descr-item">
+                  <img src="./img/svg/arrow-tariff.svg" alt="icon" class="tariff__descr-icon">
+                  <div class="tariff__descr-text">
+                    <p>Parturient dui iaculis sed proin nunc faucibus amet. Nisl vitae in dui eget
+                      pretium ut etiam.
+                      Faucibus semper diam quis volutpat est augue. Faucibus suspendisse ultrices
+                      egestas lacus sodales
+                      lobortis quam.</p>
+                    <p>Tellus sagittis mollis libero felis suspendisse risus. Malesuada leo est
+                      suspendisse ultricies
+                      in quam lacus. Elit sit massa elementum hendrerit feugiat sit etiam vel
+                      turpis. Nulla et est
+                      suspendisse maecenas faucibus luctus vel.</p>
+                  </div>
+                </li>
+
+              </ul>
+              <button type="button" class="tariff__button button">5000 BRT</button>
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
